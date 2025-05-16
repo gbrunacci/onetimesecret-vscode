@@ -2,6 +2,8 @@
 
 Share code snippets securely with teammates, clients, or collaborators using self-destructing links.
 
+![Watch Demo](https://github.com/gbrunacci/onetimesecret-vscode/raw/refs/heads/main/assets/demo.gif)
+
 ## What is OneTimeSecret?
 
 OneTimeSecret is a service that lets you share sensitive information with a link that automatically expires after being viewed once or after a set time period. This VS Code extension allows you to quickly create these secure, self-destructing links directly from your editor.
