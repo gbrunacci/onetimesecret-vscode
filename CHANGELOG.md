@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.2 (May 2025)
+
+### Updated
+
+- Docs, logos and demo
+
 ## 0.0.1 (May 2025)
 
 ### Added

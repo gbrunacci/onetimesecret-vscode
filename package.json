@@ -2,14 +2,14 @@
   "name": "onetimesecret",
   "displayName": "OneTimeSecret",
   "description": "Share snippets securely one OneTimeSecret.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/gbrunacci/onetimesecret-vscode.git"
   },
   "publisher": "gbrunacci",
   "license": "MIT",
-  "icon": "https://github.com/gbrunacci/onetimesecret-vscode/raw/refs/heads/main/assets/logo.square.low.png",
+  "icon": "assets/logo.square.low.png",
   "engines": {
     "vscode": "^1.100.0"
   },

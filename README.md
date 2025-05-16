@@ -60,7 +60,7 @@ This extension sends your selected text to the OneTimeSecret API. The text is en
 
 ## Release Notes
 
-### 0.0.1 (May 2025)
+### 0.0.2 (May 2025)
 
 - Initial release
 - Support for EU and US regions
