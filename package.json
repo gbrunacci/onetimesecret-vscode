@@ -1,7 +1,7 @@
 {
   "name": "onetimesecret",
   "displayName": "OneTimeSecret",
-  "description": "Share snippets securely",
+  "description": "Share snippets securely one OneTimeSecret.com",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.100.0"
@@ -18,16 +18,41 @@
         "title": "Hello World"
       },
       {
-        "command": "onetimesecret.shareSelectedText",
+        "command": "onetimesecret.shareSelectedTextEU7d",
         "title": "OneTimeSecret: share selected text. (EU Region; expires in 7 days)"
+      },
+      {
+        "command": "onetimesecret.shareSelectedTextEU1d",
+        "title": "OneTimeSecret: share selected text. (EU Region; expires in 1 day)"
+      },
+      {
+        "command": "onetimesecret.shareSelectedTextEU1h",
+        "title": "OneTimeSecret: share selected text. (EU Region; expires in 1 hour)"
+      },
+      {
+        "command": "onetimesecret.shareSelectedTextUS7d",
+        "title": "OneTimeSecret: share selected text. (US Region; expires in 7 days)"
+      },
+      {
+        "command": "onetimesecret.shareSelectedTextUS1d",
+        "title": "OneTimeSecret: share selected text. (US Region; expires in 1 day)"
+      },
+      {
+        "command": "onetimesecret.shareSelectedTextUS1h",
+        "title": "OneTimeSecret: share selected text. (US Region; expires in 1 hour)"
       }
     ],
     "menus": {
       "editor/context": [
         {
           "when": "editorHasSelection",
-          "command": "onetimesecret.shareSelectedText",
-          "group": "9_cutcopypaste"
+          "command": "onetimesecret.shareSelectedTextEU7d",
+          "group": "9_cutcopypaste@1"
+        },
+        {
+          "when": "editorHasSelection",
+          "command": "onetimesecret.shareSelectedTextUS7d",
+          "group": "9_cutcopypaste@2"
         }
       ]
     }
@@ -47,16 +72,19 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.100.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/vscode": "^1.100.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
-    "eslint": "^9.25.1",
-    "esbuild": "^0.25.3",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.25.3",
+    "eslint": "^9.25.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "zod": "^3.24.4"
   }
 }

@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "onetimesecret" extension will be documented in this file.
+## 0.0.1 (May 2025)
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+### Added
 
 - Initial release
+- Support for EU and US regions
+- Multiple expiration options (1 hour, 1 day, 7 days)
+- Optional passphrase protection

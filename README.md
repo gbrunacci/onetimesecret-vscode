@@ -1,71 +1,80 @@
-# onetimesecret README
+# OneTimeSecret for VS Code
 
-This is the README for your extension "onetimesecret". After writing up a brief description, we recommend including the following sections.
+Share code snippets securely with teammates, clients, or collaborators using self-destructing links.
+
+## What is OneTimeSecret?
+
+OneTimeSecret is a service that lets you share sensitive information with a link that automatically expires after being viewed once or after a set time period. This VS Code extension allows you to quickly create these secure, self-destructing links directly from your editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Secure Sharing**: Selected code is encrypted and only viewable once
+- **Multiple Regions**: Choose between EU or US-based servers
+- **Flexible Expiration**: Set links to expire after 1 hour, 1 day, or 7 days
+- **Passphrase Protection**: Optionally secure your shared snippets with a passphrase
+- **Context Menu Integration**: Right-click on selected text to quickly share
+- **Command Palette Access**: Access all sharing options via Command Palette (⇧⌘P)
 
-For example if there is an image subfolder under your extension project workspace:
+### How It Works
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Select the code/text you want to share
+2. Right-click and choose "OneTimeSecret: share selected text" or use Command Palette
+3. Optionally enter a passphrase
+4. Get a one-time link that you can share with anyone
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Available Commands
+
+This extension provides the following commands:
+
+| Command                                                              | Description                                     |
+| -------------------------------------------------------------------- | ----------------------------------------------- |
+| `OneTimeSecret: share selected text. (EU Region; expires in 7 days)` | Share text on EU servers with 7-day expiration  |
+| `OneTimeSecret: share selected text. (EU Region; expires in 1 day)`  | Share text on EU servers with 1-day expiration  |
+| `OneTimeSecret: share selected text. (EU Region; expires in 1 hour)` | Share text on EU servers with 1-hour expiration |
+| `OneTimeSecret: share selected text. (US Region; expires in 7 days)` | Share text on US servers with 7-day expiration  |
+| `OneTimeSecret: share selected text. (US Region; expires in 1 day)`  | Share text on US servers with 1-day expiration  |
+| `OneTimeSecret: share selected text. (US Region; expires in 1 hour)` | Share text on US servers with 1-hour expiration |
+
+## Security
+
+- Your selection is encrypted by the OneTimeSecret service
+- Links automatically expire after being viewed once
+- Optional passphrase protection adds another layer of security
+- Secrets automatically expire even if they're never viewed
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Internet connection to connect to OneTimeSecret API servers
+- VS Code version 1.100.0 or higher
 
-## Extension Settings
+## Privacy Considerations
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension sends your selected text to the OneTimeSecret API. The text is encrypted on their servers, but you should review their [privacy policy](https://onetimesecret.com/privacy) for complete information about how your data is handled.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- The extension requires an active internet connection
+- Very large text selections may be rejected by the API
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1 (May 2025)
 
-### 1.0.0
+- Initial release
+- Support for EU and US regions
+- Multiple expiration options (1 hour, 1 day, 7 days)
+- Optional passphrase protection
 
-Initial release of ...
+## About OneTimeSecret
 
-### 1.0.1
+This extension integrates with the OneTimeSecret service, which is operated by [Solutious Inc](https://solutious.com/). This extension is not officially affiliated with Solutious Inc.
 
-Fixed issue #.
+Visit [onetimesecret.com](https://onetimesecret.com/) for more information about the service.
 
-### 1.1.0
+## License
 
-Added features X, Y, and Z.
+This extension is licensed under the MIT License.
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy sharing your code securely!**
