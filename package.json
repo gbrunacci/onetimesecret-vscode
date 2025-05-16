@@ -9,6 +9,7 @@
   },
   "publisher": "gbrunacci",
   "license": "MIT",
+  "icon": "https://github.com/gbrunacci/onetimesecret-vscode/raw/refs/heads/main/assets/logo.square.low.png",
   "engines": {
     "vscode": "^1.100.0"
   },
