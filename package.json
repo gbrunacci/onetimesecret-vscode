@@ -3,6 +3,12 @@
   "displayName": "OneTimeSecret",
   "description": "Share snippets securely one OneTimeSecret.com",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbrunacci/onetimesecret-vscode.git"
+  },
+  "publisher": "gbrunacci",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.100.0"
   },
